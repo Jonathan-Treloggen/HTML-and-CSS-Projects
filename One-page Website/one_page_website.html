@@ -12,36 +12,163 @@
 		<!-- HOME -->
 		<div id="home">
 			<header><h1><u>Snowy owls</u><h1></header>
-				<p>Snowy owls or beautiful creatures.</p>
+				<p>Snowy owls are beautiful creatures.
+				<br>Click on one of the photos. to see them in a slide show.
+				</p>
 		</div>	
 		<!-- END HOME -->
 		
+
+	<!-- PICTURES -->
+		<!-- IMAGES ABLE ABLE TO OPEN LIGHTBOX -->
+		<div id="pictures" class="row">
+			<div class="column">
+				<img src="images/snowy_owl_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="images/snowy_owl_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="images/snowy_owl_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="images/snowy_owl_4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="column">
+				<img src="images/snowy_owl_5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="images/snowy_owl_6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="images/snowy_owl_7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="images/snowy_owl_8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+			</div>
+		</div>
+		<!-- END OF IMAGES ABLE ABLE TO OPEN LIGHTBOX -->
+
+		<!-- THE MODAL/LIGHTBOX -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+				<div class="mySlides">
+					<div class="numbertext">1 / 8</div>
+					<img src="images/snowy_owl_1.jpg" style="width: 100%; height: 750px;">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 8</div>
+					<img src="images/snowy_owl_2.jpg" style="width: 100%; height: 750px;">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3 / 8</div>
+					<img src="images/snowy_owl_3.jpg" style="width: 100%; height: 750px;">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">4 / 8</div>
+					<img src="images/snowy_owl_4.jpg" style="width: 100%; height: 750px;">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">5 / 8</div>
+					<img src="images/snowy_owl_5.jpg" style="width: 100%; height: 750px;">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">6 / 8</div>
+					<img src="images/snowy_owl_6.jpg" style="width: 100%; height: 750px;">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">7 / 8</div>
+					<img src="images/snowy_owl_7.jpg" style="width: 100%; height: 750px;">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">8 / 8</div>
+					<img src="images/snowy_owl_8.jpg" style="width: 100%; height: 750px;">
+				</div>
+
+				<!-- NEXT/PREVIOUS CONTROLS -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				<!-- END OF NEXT/PREVIOUS CONTROLS -->
+
+				<!-- CAPTION TEXT -->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+				<!-- END OF CAPTION TEXT -->
+
+				<!-- THUMBNAIL IMAGE CONTROLS -->
+				<div class="column">
+					<img class="pics" src="images/snowy_owl_1.jpg" onclick="currentSlide(1)" alt="">
+				</div>
+
+				<div class="column">
+					<img class="pics" src="images/snowy_owl_2.jpg" onclick="currentSlide(2)" alt="">
+				</div>
+
+				<div class="column">
+					<img class="pics" src="images/snowy_owl_3.jpg" onclick="currentSlide(3)" alt="">
+				</div>
+
+				<div class="column">
+					<img class="pics" src="images/snowy_owl_4.jpg" onclick="currentSlide(4)" alt="">
+				</div>
+
+				<div class="column">
+					<img class="pics" src="images/snowy_owl_5.jpg" onclick="currentSlide(5)" alt="">
+				</div>
+
+				<div class="column">
+					<img class="pics" src="images/snowy_owl_6.jpg" onclick="currentSlide(6)" alt="">
+				</div>
+
+				<div class="column">
+					<img class="pics" src="images/snowy_owl_7.jpg" onclick="currentSlide(7)" alt="">
+				</div>
+
+				<div class="column">
+					<img class="pics" src="images/snowy_owl_8.jpg" onclick="currentSlide(8)" alt="">
+				</div>
+				<!-- END OF THUMBNAIL IMAGE CONTROLS -->
+
+			</div>
+		</div>
+		<!-- END OF THE MODAL/LIGHTBOX -->
+	<!-- END PICTURES -->
+			<br>
+			<p><u>Their also intense hunters.</u></p>
+			
+	<!-- VIDEO -->
+		<div id="video">
+			<iframe width="1890" height="800" src="https://www.youtube.com/embed/Uf5IQiLOQK0" frameborder="0" 
+			allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	<!-- END VIDEO -->
+
 		<!-- FORM -->
 			<form action="thats-nice.html">
-				<label for="answer">Do you like Snowy owls?</label>
-				<input type="text" id="answer" name="answer"><br>
+				<label for="answer">After looking at the photos, and
+								<br>watching the video did you  end
+								<br>up liking Snowy owls?</label>
+				<br>
+				<input type="text" id="answer" name="answer">
+				<br>
 				<input type="submit" value="Submit">
 			</form>
 		<!-- END FORM -->
-		
-		<!-- PICTURES -->
-		<div id="pictures">
-			<img src="./images/snowy_owl_1.jpeg" height="900" width="1900">
-			<img src="./images/snowy_owl_2.jpg" height="900" width="1900">
-		</div>
-		<!-- END PICTURES -->
-			
-			<p><u>Their also intense hunters.</u></p>
-			
-		<!-- VIDEO -->
-		<div id="video">
-			<iframe width="1900" height="900" src="https://www.youtube.com/embed/Uf5IQiLOQK0" 
-			frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
-			picture-in-picture" allowfullscreen></iframe>
-		</div>
-		<!-- END VIDEO -->
 	
-			<!-- NAV -->
+	<!-- NAV -->
 		<div class="navbar">
 			<ul>
 				<a href="#home" id="link">HOME</a> |
@@ -49,10 +176,14 @@
 				<a href="#video">SNOWY OWL VIDEO</a>
 			</ul>
 		</div>
-		<!-- END NAV -->
+	<!-- END NAV -->
 		
-		<footer>
-			<p>Any questions?<p>
-			<p>Email: not_my_real_email@gmail.com</p>
+	<footer>
+		<p>Any questions?<p>
+		<p>Email: not_my_real_email@gmail.com</p>
+	</footer>
+
+	<script src="JS/one_page_website.js" defer></script>
 	</body>
+
 </html>	
