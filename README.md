@@ -1,4 +1,4 @@
 <h1>School work</h1>
 <p>
-  Thats about it.
+  This is notes, challenges, and assignments for my bootcamp at The Tech Academy.
 <p>
